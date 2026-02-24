@@ -4,11 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Header</title>
-
-  <!-- Inter -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
-
-
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,29 +16,29 @@
   <div class="container">
     
     <!-- Logo -->
-    <a href="/" class="logo">
+    <a href="#hero" class="logo">
         <img src="img/LOGO.png" alt="BizBet Logo">
     </a>
 
 
     <!-- Navigation -->
     <nav class="nav">
-      <a href="#">Download</a>
-      <a href="#">Crash Game</a>
-      <a href="#">Promo Code</a>
-      <a href="#">About BizBet</a>
+      <a href="#about" data-i18n="nav_about">About BizBet</a>
+      <a href="#promo" data-i18n="nav_promo">Promo Code</a>
+      <a href="#crash" data-i18n="nav_crash">Crash Game</a>
+      <a href="#security" data-i18n="nav_security">Security</a>
     </nav>
 
     <!-- Right side -->
     <div class="header-right">
       
       <div class="lang-switch">
-        <span class="lang active" data-lang="en">EN</span>
+        <span class="lang" data-lang="en">EN</span>
         <span class="divider">|</span>
         <span class="lang" data-lang="ar">AR</span>
       </div>
 
-      <a href="#" class="bonus-btn">
+      <a href="https://refpa83754.com/L?tag=d_3906884m_88900c_GIFT300&site=3906884&ad=88900" class="bonus-btn" data-i18n="hero_btn">
             GET BONUS NOW
       </a>
 
@@ -53,36 +50,44 @@
 
 <!-- HERO -->
 
-<section class="hero">
+<section id="hero" class="hero">
 
   <div class="container hero-inner">
 
     <div class="hero-content">
       
-      <h1>
+      <h1 data-i18n="hero_title">
         THIS OFFER IS<br>
         STILL AVAILABLE<br>
         FOR <span class="highlight">YOU</span>
       </h1>
 
-      <h2>TAKES LESS THAN 30 SECONDS</h2>
+      <h2 data-i18n="hero_sub">TAKES LESS THAN 30 SECONDS</h2>
 
       <ul class="hero-list">
         <li>
           <span class="check"></span>
-          1,284 players online
+          <span data-i18n="hero_online">
+            1,284 players online
+          </span>
         </li>
+
         <li>
           <span class="check"></span>
-          Up to <span class="accent">200%</span> bonus
+          <span data-i18n="hero_bonus">
+            Up to <span class="accent">200%</span> bonus
+          </span>
         </li>
+
         <li>
           <span class="check"></span>
-          Instant access
+          <span data-i18n="hero_access">
+            Instant access
+          </span>
         </li>
       </ul>
 
-      <a href="#" class="bonus-btn hero-btn">
+      <a data-i18n="hero_btn" href="https://refpa83754.com/L?tag=d_3906884m_88900c_GIFT300&site=3906884&ad=88900" class="bonus-btn hero-btn">
         GET BONUS NOW
       </a>
 
@@ -96,7 +101,7 @@
 
 <!-- ABOUT US -->
 
-<section class="about">
+<section id="about" class="about">
 
   <div class="container about-inner">
 
@@ -108,23 +113,23 @@
     <!-- Правая часть (контент) -->
     <div class="about-content">
 
-      <h2 class="about-title">
+      <h2 class="about-title" data-i18n="about_title">
         WHAT IS BIZBET?
       </h2>
 
-      <p class="about-text">
+      <p class="about-text" data-i18n="about_text1">
         BizBet is a modern betting platform designed
         for fast access, instant games, and smooth
         performance on any device.
       </p>
 
-      <p class="about-text">
+      <p class="about-text" data-i18n="about_text2">
         Thousands of players choose BizBet every day
         to enjoy popular games, quick registration,
         and generous bonuses.
       </p>
 
-      <a href="#" class="bonus-btn about-btn">
+      <a data-i18n="hero_btn" href="https://refpa83754.com/L?tag=d_3906884m_88900c_GIFT300&site=3906884&ad=88900" class="bonus-btn about-btn">
         GET BONUS NOW
       </a>
 
@@ -140,7 +145,7 @@
 
   <div class="container">
 
-    <h2 class="features-title">
+    <h2 class="features-title" data-i18n="benefits_title">
       WHY PLAYERS CHOOSE BIZBET?
     </h2>
 
@@ -148,32 +153,32 @@
 
       <div class="feature-card">
         <div class="feature-icon"><img src="img/icon1.png" alt=""></div>
-        <h3 class="feature-card-title">Fast registration</h3>
-        <p class="feature-card-text">
+        <h3 class="feature-card-title" data-i18n="benefit_fast_title">Fast registration</h3>
+        <p class="feature-card-text" data-i18n="benefit_fast_text">
           Start playing in minutes without complicated steps
         </p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon"><img src="img/icon2.png" alt=""></div>
-        <h3 class="feature-card-title">Big bonuses</h3>
-        <p class="feature-card-text">
+        <h3 class="feature-card-title" data-i18n="benefit_bonus_title">Big bonuses</h3>
+        <p class="feature-card-text" data-i18n="benefit_bonus_text">
           Extra value for new and active players
         </p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon"><img src="img/icon3.png" alt=""></div>
-        <h3 class="feature-card-title">Secure platform</h3>
-        <p class="feature-card-text">
+        <h3 class="feature-card-title" data-i18n="benefit_secure_title">Secure platform</h3>
+        <p class="feature-card-text" data-i18n="benefit_secure_text">
           Trusted technology and stable performance
         </p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon"><img src="img/icon4.png" alt=""></div>
-        <h3 class="feature-card-title">Popular games</h3>
-        <p class="feature-card-text">
+        <h3 class="feature-card-title" data-i18n="benefit_games_title">Popular games</h3>
+        <p class="feature-card-text" data-i18n="benefit_games_text">
           Sports, casino, and fast-paced crash games
         </p>
       </div>
@@ -183,6 +188,188 @@
   </div>
 
 </section>
+
+<!--- PROMO CODE --->
+
+<div class="promo-wrapper" id="promoWrapper">
+
+  <button class="promo-toggle" id="promoToggle" data-i18n="hide">
+    HIDE
+  </button>
+
+  <div class="promo-box">
+
+    <img src="img/LOGO.png" alt="BizBet Logo" class="promo-logo">
+
+    <button class="promo-code" id="promoCode">
+      GIFT300
+    </button>
+
+    <a href="https://refpa83754.com/L?tag=d_3906884m_88900c_GIFT300&site=3906884&ad=88900" class="bonus-btn promo-btn" data-i18n="try_now">
+      TRY NOW
+    </a>
+
+  </div>
+
+  <div class="promo-copied" id="promoCopied">
+    COPIED
+  </div>
+
+</div>
+
+<!--- PROMO SECTION --->
+
+<section id="promo" class="promo-section">
+
+  <div class="container promo-inner">
+
+    <h2 class="promo-title" data-i18n="hero_bonus">
+      USE PROMO <span class="promo-accent">CODE</span>
+    </h2>
+
+    <div class="promo-card">
+      <div class="promo-code-big">GIFT300</div>
+
+      <div class="promo-divider"></div>
+
+      <div class="promo-subtext" data-i18n="hero_bonus">
+        Up to <span class="promo-percent">200%</span> bonus
+      </div>
+    </div>
+
+    <button type="button" class="bonus-btn promo-main-btn" id="promoMainBtn">
+      <img src="img/copied.svg" alt="" class="promo-btn-icon">
+      <span class="promo-btn-text" data-i18n="promo_copy">COPY CODE</span>
+    </button>
+
+    <div class="promo-copy-toast" id="promoCopyToast">
+      COPIED
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Crash Game -->
+
+<section id="crash" class="crash-section">
+
+  <div class="container crash-inner">
+
+    <!-- Левая часть (картинка) -->
+    <div class="crash-image">
+      <img src="img/crash-game_img.png" alt="Crash Game">
+    </div>
+
+    <!-- Правая часть (контент) -->
+    <div class="crash-content">
+
+      <h2 class="crash-title" data-i18n="crash_title">
+        CRASH GAME
+      </h2>
+
+      <p class="crash-text" data-i18n="crash_text_top">
+        Real-time multiplayer. One click can change everything
+      </p>
+
+      <p class="crash-text" data-i18n="crash_text">
+        Watch the multiplier grow and cash out before it crashes. 
+        Fast rounds. One decision
+      </p>
+
+      <a href="https://bizbet-25221.pro/ru/games/crash" class="bonus-btn crash-btn" data-i18n="crash_cta">
+        PLAY NOW
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- TRUST SECTION -->
+
+<section id="security" class="trust-section">
+
+  <div class="container trust-inner">
+
+    <h2 class="trust-title" data-i18n="trust_title">
+      TRUST / <span class="trust-accent">SECURITY</span>
+    </h2>
+
+    <div class="trust-cards">
+
+      <div class="trust-card">
+        <img src="img/secur-icon1.png" alt="" class="trust-icon">
+
+        <p class="trust-text" data-i18n="trust_text">
+          Thousands of players choose BizBet every day 
+          to enjoy popular games, quick registration, 
+          and generous bonuses
+        </p>
+      </div>
+
+      <div class="trust-card">
+        <img src="img/secur-icon2.png" alt="" class="trust-icon">
+
+        <p class="trust-text" data-i18n="trust_text_extra">
+          BizBet is a modern betting platform designed 
+          for fast access, instant games, and smooth 
+          performance on any device
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+  <div class="container footer-inner">
+
+    <!-- Лого сверху -->
+    <div class="footer-top">
+      <img src="img/LOGO.png" alt="BizBet Logo" class="footer-logo">
+    </div>
+
+    <!-- Разделительная линия -->
+    <div class="footer-divider"></div>
+
+    <!-- Нижний блок -->
+    <div class="footer-bottom">
+
+      <!-- Левый блок -->
+      <div class="footer-warning">
+        <img src="img/18+.svg" alt="18+" class="footer-18">
+        <p data-i18n="footer_warning">
+          Gambling can be addictive.<br>
+          Play only if you are 18 or older
+        </p>
+      </div>
+
+      <!-- Центр -->
+      <nav class="footer-nav">
+        <a href="#about" data-i18n="nav_about">About BizBet</a>
+        <a href="#promo" data-i18n="nav_promo">Promo Code</a>
+        <a href="#crash" data-i18n="nav_crash">Crash Game</a>
+        <a href="#security" data-i18n="nav_security">Security</a>
+      </nav>
+
+      <!-- Правый блок -->
+      <div class="footer-copy">
+        <img src="img/copy.svg" alt="©" class="footer-copy-icon">
+        <span data-i18n="footer_copy">2026 BizBet. All rights reserved</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
 
 
 <script src="script.js"></script>
