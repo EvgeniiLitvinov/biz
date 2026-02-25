@@ -14,7 +14,7 @@ const translations = {
             `,
       hero_sub: "Takes less than 30 seconds",
       hero_online: "1,284 players online",
-      hero_bonus: `Up to <span class="accent">200%</span> bonus`,
+      hero_bonus: `Up to <span class="accent">300%</span> bonus`,
       hero_access: "Instant access",
       hero_btn: "GET BONUS NOW",
 
@@ -37,8 +37,8 @@ const translations = {
       show: "SHOW",
 
       promo_title: `USE PROMO <span class="promo-accent">CODE</span>`,
-      promo_code: "BONUSBET",
-      promo_sub: "Up to 200% bonus",
+      promo_code: "GIFT300",
+      promo_sub: "Up to 300% bonus",
       promo_copy: "COPY CODE",
       promo_copied: "Copied",
 
@@ -65,7 +65,7 @@ const translations = {
       hero_title: "هذا العرض لا يزال متاحاً لك",
       hero_sub: "يستغرق الأمر أقل من 30 ثانية",
       hero_online: "1,284 لاعب متصل الآن",
-      hero_bonus: `حتى <span class="accent">200٪</span> مكافأة`,
+      hero_bonus: `حتى <span class="accent">300٪</span> مكافأة`,
       hero_access: "وصول فوري",
       hero_btn: "احصل على المكافأة الآن",
 
@@ -90,8 +90,8 @@ const translations = {
       show: "إظهار",
 
       promo_title: `استخدم <span class="promo-accent">الرمز الترويجي</span>`,
-      promo_code: "BONUSBET",
-      promo_sub: "مكافأة تصل إلى 200%",
+      promo_code: "GIFT300",
+      promo_sub: "مكافأة تصل إلى 300%",
       promo_copy: "انسخ الزر",
       promo_copied: "نسخ",
 
@@ -219,7 +219,7 @@ const promoBtnIcon = promoMainBtn.querySelector('.promo-btn-icon');
 promoMainBtn.addEventListener('click', (e) => {
   e.preventDefault();
 
-  const promoCode = "GIFT300";
+  const promoCode = document.querySelector('.promo-code-big').textContent.trim();
 
   navigator.clipboard.writeText(promoCode).then(() => {
 
@@ -334,3 +334,77 @@ window.addEventListener("scroll", () => {
   });
 
 });
+
+// ===== БУРГЕР =====
+
+const burger = document.getElementById("burger");
+const nav = document.querySelector(".nav");
+
+// Универсальная функция закрытия
+function closeBurgerMenu() {
+  burger.classList.remove("active");
+  nav.classList.remove("active");
+  document.body.classList.remove("no-scroll");
+}
+
+// Открытие / закрытие по кнопке
+burger.addEventListener("click", (e) => {
+  e.stopPropagation(); // чтобы клик не улетал в document
+  burger.classList.toggle("active");
+  nav.classList.toggle("active");
+  document.body.classList.toggle("no-scroll");
+});
+
+// Закрытие при клике на пункт меню
+const burgerMenuLinks = document.querySelectorAll(".nav a");
+
+burgerMenuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    closeBurgerMenu();
+  });
+});
+
+// Закрытие при клике вне меню
+document.addEventListener("click", (e) => {
+  const isClickInsideNav = nav.contains(e.target);
+  const isClickBurger = burger.contains(e.target);
+
+  if (!isClickInsideNav && !isClickBurger && nav.classList.contains("active")) {
+    closeBurgerMenu();
+  }
+});
+
+// ===============================
+// STRONG MAGNETIC HERO BUTTON
+// ===============================
+
+const magneticBtn = document.querySelector('.hero-btn');
+
+if (magneticBtn && window.innerWidth > 992) {
+
+  magneticBtn.addEventListener('mousemove', (e) => {
+
+    const rect = magneticBtn.getBoundingClientRect();
+
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const centerX = rect.width / 2;
+    const centerY = rect.height / 2;
+
+    const distanceX = x - centerX;
+    const distanceY = y - centerY;
+
+    const strength = 0.15; // ← ВАЖНО (увеличено)
+
+    magneticBtn.style.transform = `
+      translate(${distanceX * strength}px, ${distanceY * strength}px)
+      scale(1.05)
+    `;
+  });
+
+  magneticBtn.addEventListener('mouseleave', () => {
+    magneticBtn.style.transform = "translate(0px, 0px) scale(1)";
+  });
+
+}
