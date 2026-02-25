@@ -1453,10 +1453,18 @@ body {
 
 @media (max-width: 992px) {
 
+  body {
+    padding-top: 0;
+  }
+
   .hero {
-    min-height: auto;
-    padding: 60px 0 40px;
-    align-items: flex-start;
+    min-height: 100svh; /* важно */
+    height: 100svh;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
   }
 
   .hero-inner {
