@@ -80,7 +80,7 @@ body {
 
 /* Links */
 .nav a {
-  display: flex;
+  display: inline-flex;
   align-items: center;
 
   position: relative;
@@ -99,11 +99,6 @@ body {
 .nav a.active {
   color: #D84700;
   text-shadow: 0 0 8px rgba(216, 71, 0, 0.6);
-}
-
-.nav a {
-  display: inline-flex; /* важно */
-  
 }
 
 .nav a::after {
@@ -1298,15 +1293,6 @@ body {
   margin-left: clamp(40px, 8vw, 120px);
 }
 
-[dir="rtl"] .hero-players {
-  right: auto;
-  left: 0;
-}
-
-[dir="rtl"] .crash-content {
-  text-align: right;
-}
-
 /* Смещаем фон */
 [dir="rtl"] .hero {
   background-position: center right;
@@ -1459,7 +1445,6 @@ body {
 
   .hero {
     min-height: 100svh; /* важно */
-    height: 100svh;
     padding: 0;
     display: flex;
     align-items: center;
@@ -1480,7 +1465,7 @@ body {
 
    /* сбрасываем десктопный RTL margin */
   [dir="rtl"] .hero-content {
-    margin-left: 0 !important;
+    margin-left: 0;
   }
 
   /* фон всегда по центру на мобиле */
@@ -1677,8 +1662,8 @@ body {
   }
 
   .promo-box {
-    justify-content: space-evenly;
-    gap: 120px;
+    justify-content: center;
+    gap: 20px;
     width: 100%;
     height: 64px;
     padding: 0 14px;
@@ -1687,7 +1672,6 @@ body {
 
     display: flex;
     align-items: center;
-    gap: 12px;
 
     border-radius: 14px;
     border: 1px solid rgba(255,255,255,0.12);
@@ -1961,36 +1945,13 @@ body {
     font-size: 13px;
   }
 
-}
-
-/* ===== FORCE ENGLISH LAYOUT FOR CRASH ON MOBILE ===== */
-
-@media (max-width: 992px) {
-
-  [dir="rtl"] .crash-inner {
-    flex-direction: column !important;
-  }
-
-  [dir="rtl"] .crash-content {
-    text-align: center !important;
-  }
-
-  [dir="rtl"] .crash-title {
-    text-align: center !important;
-  }
-
-  [dir="rtl"] .crash-btn {
-    margin: 0 auto !important;
-  }
-
-}
 
 /* ===== FORCE SAME FOOTER LAYOUT ON MOBILE (RTL FIX) ===== */
 
 @media (max-width: 992px) {
 
   [dir="rtl"] .footer-bottom {
-    flex-direction: column !important;
+    flex-direction: column;
     align-items: center !important;
     text-align: center !important;
   }
@@ -2010,6 +1971,31 @@ body {
   [dir="rtl"] .footer-copy {
     justify-content: center !important;
     text-align: center !important;
+  }
+
+}
+
+/* ===== FORCE ENGLISH LAYOUT FOR CRASH ON MOBILE (RTL FIX) ===== */
+
+@media (max-width: 992px) {
+
+  [dir="rtl"] .crash-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  [dir="rtl"] .crash-content {
+    text-align: center;
+    max-width: 520px;
+    margin: 0 auto;
+  }
+
+  [dir="rtl"] .crash-title {
+    text-align: center;
+  }
+
+  [dir="rtl"] .crash-btn {
+    margin: 0 auto;
   }
 
 }
