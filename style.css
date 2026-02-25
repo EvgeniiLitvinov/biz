@@ -1936,7 +1936,19 @@ body {
 
   .footer-nav a:hover {
     opacity: 1;
+    color: #fff;
   }
+
+  .footer-nav a:active {
+    color: #D84700;
+  }
+
+  .footer-nav a:focus {
+    color: #fff;
+    outline: none;
+  }
+
+}
 
   /* ===== COPY ===== */
 
