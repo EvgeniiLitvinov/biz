@@ -243,7 +243,7 @@ body {
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: url("img/main-free.png") center / cover no-repeat;
+  background: url("img/main-free.jpg") center / cover no-repeat;
 }
 
 @media (min-width: 1600px) {
@@ -451,7 +451,7 @@ body {
   padding: 60px 0;
   overflow: hidden;
 
-  background: url("img/about.png") center / cover no-repeat;
+  background: url("img/about.jpg") center / cover no-repeat;
 }
 
 .about::before {
@@ -547,7 +547,7 @@ body {
   display: flex;
   align-items: center;
 
-  background: url("img/choose.png") center / cover no-repeat;
+  background: url("img/choose.jpg") center / cover no-repeat;
 }
 
 .features::after {
@@ -986,7 +986,7 @@ body {
 .crash-section {
   position: relative;
   padding: 60px 0;
-  background: url(./img/CrashGame.png) center / cover no-repeat;
+  background: url(./img/CrashGame.jpg) center / cover no-repeat;
 }
 
 /* затемнение сверху/снизу если нужно */
@@ -1090,7 +1090,7 @@ body {
 .trust-section {
   position: relative;
   padding: 60px 0;
-  background: url(./img/security.png) center / cover no-repeat;
+  background: url(./img/security.jpg) center / cover no-repeat;
   overflow: hidden;
 }
 
