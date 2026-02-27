@@ -60,7 +60,7 @@ const translations = {
     },
 
     ar: {
-      nav_about: "Bizbet حول",
+      nav_about: "حول Bizbet",
       nav_promo: "الرمز الترويجي",
       nav_crash: "لعبة الاصطدام",
       nav_security: "الأمان",
