@@ -68,7 +68,7 @@ const translations = {
       hero_title: "هذا العرض لا يزال متاحاً لك",
       hero_sub: "يستغرق الأمر أقل من 30 ثانية",
       hero_online: "1,284 لاعب متصل الآن",
-      hero_bonus: `حتى <span class="accent">300٪</span> مكافأة`,
+      hero_bonus: `مكافأة تصل إلى <span class="accent">300٪</span>`,
       hero_access: "وصول فوري",
       hero_btn: "احصل على المكافأة الآن",
 
