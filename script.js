@@ -18,11 +18,14 @@ const translations = {
       hero_access: "Instant access",
       hero_btn: "GET BONUS NOW",
 
-      about_title: "What is BizBet?",
+      about_title: `What is 
+                <span class="brand">
+                  <span class="brand-biz">Biz</span><span class="brand-bet">Bet</span>
+                </span>?`,
       about_text1: "BizBet is a modern betting platform designed for fast access, instant games, and smooth performance on any device.",
       about_text2: "Thousands of players choose BizBet every day to enjoy popular games, quick registration, and generous bonuses.",
 
-      benefits_title: "Why players choose BizBet",
+      benefits_title: `Why players choose <span class="brand"><span class="brand-biz">Biz</span><span class="brand-bet">Bet</span></span>`,
       benefit_fast_title: "Fast registration",
       benefit_fast_text: "Start playing in minutes without complicated steps.",
       benefit_bonus_title: "Big bonuses",
@@ -69,11 +72,14 @@ const translations = {
       hero_access: "وصول فوري",
       hero_btn: "احصل على المكافأة الآن",
 
-      about_title: "؟Bizbet ما هي",
+      about_title: `ما هي 
+                  <span class="brand" dir="ltr">
+                    <span class="brand-biz">Biz</span><span class="brand-bet">Bet</span>
+                  </span>؟`,
       about_text1: "BizBet منصة مراهنات حديثة مصممة للوصول السريع والألعاب الفورية والأداء السلس على أي جهاز.",
       about_text2: "يختار آلاف اللاعبين BizBet يوميًا للاستمتاع بالألعاب الشهيرة والتسجيل السريع والمكافآت السخية.",
 
-      benefits_title: "BizBet لمادا يختار اللاعبون",
+      benefits_title: `لماذا يختار اللاعبون <span class="brand"><span class="brand-biz">Biz</span><span class="brand-bet">Bet</span></span>`,
       benefit_fast_title: "تسجيل سريع",
       benefit_fast_text: "ابدأ اللعب بعد دقائق دون خطوات معقدة.",
       benefit_bonus_title: "مكافآت كبيرة",
@@ -101,12 +107,12 @@ const translations = {
       crash_cta: "إلعب الآن",
       
       trust_title: `الثقة / <span class="trust-accent">الأمن</span>`,
-      trust_text: "تستخدم  معايير أمنية حديثة لتوفير بيئة لعب آمنة ومستقرة لجميع اللاعبين",
+      trust_text: "تستخدم  معايير أمنية حديثة لتوفير بيئة لعب آمنة ومستقرة لجميع اللاعبين.",
       trust_text_extra: "يختار آلاف اللاعبين BizBet يوميًا للاستمتاع بالألعاب الشهيرة والتسجيل السريع والمكافآت السخية.",
       
       footer_warning: `قد يُسبب القمار الإدمان<br>
 لا تلعب إلا إذا كنت تبلغ من العمر 18 عامًا أو أكثر`,
-      footer_copy: "2026 جميع الحقوق محفوظة .Bizbet",
+      footer_copy: "2026 Bizbet جميع الحقوق محفوظة .",
     }
 };
 
