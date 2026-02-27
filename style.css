@@ -232,6 +232,19 @@ body {
 
 /* ---- HERO ---- */
 
+.brand {
+  font-weight: 700;
+  
+}
+
+.brand-biz {
+  color: #ff7700;
+}
+
+.brand-bet {
+  color: #ffffff;
+}
+
 .hero {
   position: relative;
   min-height: calc(100svh - 80px);
